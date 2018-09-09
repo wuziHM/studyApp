@@ -5,22 +5,21 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
-import android.view.View.OnClickListener;
 import android.widget.TextView;
 
+import com.example.test.myapplicationtest.base.BaseActivity;
 import com.example.test.myapplicationtest.find.activites.FindActivity;
 import com.example.test.myapplicationtest.home.activities.HomeActivity;
 import com.example.test.myapplicationtest.me.activities.MyActivity;
 
-public class MainMenuActivity extends AppCompatActivity {
+public class MainMenuActivity extends BaseActivity {
 
     public static final String INTENT_CURRENT_TAB = "intent_current_tab";
 

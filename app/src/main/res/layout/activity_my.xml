@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -16,7 +17,8 @@
             android:layout_height="match_parent"
             android:gravity="center_horizontal|center"
             android:text="个人中心"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
 
         <TextView
             android:id="@+id/tv_reback"
@@ -24,162 +26,196 @@
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:gravity="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"/>
 
         <TextView
             android:layout_width="70dp"
-            android:gravity="center"
+            android:layout_height="match_parent"
             android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:textColor="@color/colorTitle"
-            android:layout_height="match_parent" />
+            android:gravity="center"
+            android:textColor="@color/colorTitle"/>
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/colorTitle"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="头像"
-            android:textColor="@color/white"
-            android:layout_weight="2"/>
-        <LinearLayout
-            android:layout_width="match_parent"
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_weight="1"
+            android:src="@mipmap/iv_portrait"
+            android:text="头像"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="3"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="张师傅"
                     android:textColor="@color/white"
-                    android:text="张师傅" />
+                    android:textSize="@dimen/sp_16"/>
+
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:textColor="@color/red"
-                    android:text="等级"/>
+                    android:layout_height="30dp"
+                    android:background="@drawable/shape_bg_red_10_corner"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:text="V3"
+                    android:textColor="@color/white"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:textColor="@color/white"
-                android:text="机电一体" />
+                android:text="机电一体"
+                android:textColor="@color/white"/>
         </LinearLayout>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:text="编辑"
-            android:textColor="@color/white"
+            android:layout_weight="1"
             android:gravity="center"
-            android:layout_weight="2"/>
+            android:text="编辑"
+            android:textColor="@color/white"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/colorTitle"
+        android:layout_height="wrap_content"
+        android:background="@color/c_28AA96"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
             android:layout_weight="2"
-            android:text="签到"/>
+            android:gravity="center"
+            android:text="签到"
+            android:textColor="@color/white"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:text="已连续签到2天"/>
+                android:text="已连续签到2天"
+                android:textColor="@color/white"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:textColor="@color/white"
-                android:text="明天签到获得10积分"/>
+                android:text="明天签到获得10积分"
+                android:textColor="@color/white"/>
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
-            android:layout_weight="1"
             android:text="学院商场"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
-            android:layout_weight="1"
             android:text="我的学院币"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
-            android:layout_weight="1"
             android:text="学院商场"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
-            android:layout_weight="1"
             android:text="我的学院币"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
-            android:layout_weight="1"
             android:text="我的学习资料"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:drawableLeft="@drawable/ic_main_menu_home_new_click"
-            android:layout_weight="1"
             android:text="我上传的资料"/>
     </LinearLayout>
+
     <TextView
         android:id="@+id/tv_log_out"
         android:layout_width="match_parent"
@@ -190,6 +226,6 @@
         android:background="@drawable/shape_button"
         android:gravity="center"
         android:text="退出登录"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"/>
 
 </LinearLayout>
