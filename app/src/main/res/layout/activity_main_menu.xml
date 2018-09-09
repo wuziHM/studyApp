@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tabhost" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+        </FrameLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone">
+        </TabWidget>
+
+        <LinearLayout
+            android:id="@+id/main_tab"
+            android:background="@drawable/bottom_tab_bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/rb_base_opt_one"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_main_menu_home_new_normal"
+                    android:background="@color/transparent"
+                    style="@style/main_tab_bottom" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/rb_base_opt_two"
+                    android:gravity="center"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/ic_main_menu_person_normal"
+                    style="@style/main_tab_bottom" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/rb_base_opt_three"
+                    android:gravity="center"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/ic_main_menu_sysinfo_normal"
+                    style="@style/main_tab_bottom" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/rb_base_opt_four"
+                    android:gravity="center"
+                    style="@style/main_tab_bottom"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/ic_main_menu_message_new_normal" />
+                <TextView
+                    android:id="@+id/tv_msg_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dip"
+                    android:layout_marginRight="4dip"
+                    android:textColor="#3399FF"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/rb_base_opt_five"
+                    android:gravity="center"
+                    style="@style/main_tab_bottom"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/ic_main_menu_message_new_normal" />
+                <TextView
+                    android:id="@+id/tv_announce_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dip"
+                    android:layout_marginRight="4dip"
+                    android:textColor="#3399FF"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TabHost>

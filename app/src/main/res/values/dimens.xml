@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_micro_size">6dp</dimen>
+    <dimen name="text_little_size">8dp</dimen>
+    <dimen name="text_middle_size">12dp</dimen>
+    <dimen name="text_normal_size">14dp</dimen>
+    <dimen name="text_large_size">18dp</dimen>
+    <dimen name="text_huge_size">24dp</dimen>
+
+    <dimen name="title_font_size">14sp</dimen>
+    <dimen name="bottom_bar_font_size">11sp</dimen>
+    <dimen name="bottom_tab_padding_up">5dp</dimen>
+    <dimen name="bottom_tab_padding_drawable">1.0dp</dimen>
+    <dimen name="bottom_tab_font_size">11sp</dimen>
+    <dimen name="bottom_tab_height_size">50dp</dimen>
+    <dimen name="pop_tab_padding">10dp</dimen>
+    <dimen name="pop_tab_drawable_padding">5.0dp</dimen>
+    <dimen name="subhead_height">30dp</dimen>
+    <dimen name="edittext_font_size">12dp</dimen>
+    <dimen name="edittext_width">156dp</dimen>
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="edittext_height_little">25dp</dimen>
+    <dimen name="subtitle_tab_padding_new">5dp</dimen>
+    <dimen name="subtitle_tab_padding">10dp</dimen>
+    <dimen name="subtitle_tab_padding_top_bottom">10dp</dimen>
+    <dimen name="subtitle_tab_drawable_padding">0.0dp</dimen>
+
+    <dimen name="widget_margin">2dp</dimen>
+
+    <dimen name="btn_height_large">60dp</dimen>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.activities.TeachPlanActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/white"
+            android:text="教学资料"/>
+        <TextView
+            android:id="@+id/tv_reback"
+            android:layout_width="50dp"
+            android:text="返回"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="70dp"
+            android:text="上传"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_res_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="搜索文件名/上传者"/>
+    <ListView
+        android:id="@+id/lv_res"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

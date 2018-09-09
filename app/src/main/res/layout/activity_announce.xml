@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.activities.NotesDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTitle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center"
+            android:text="公告栏"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv_reback"
+            android:layout_width="50dp"
+            android:text="返回"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:text="发布"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorTitle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_warning_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="警示信息"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_system_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="系统公告"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_security_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="安全知识"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_announce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
